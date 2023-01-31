@@ -1,3 +1,4 @@
+https://app.netlify.com/teams/2640244372/overview 部署静态网站
 # Astro Starter Kit: Docs Site
 
 ```bash
