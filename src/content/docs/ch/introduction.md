@@ -3,7 +3,7 @@ title: "Introduction"
 description: "Docs intro"
 ---
 
-**Welcome to Astro!**
+**网站地址 https://shimmering-longma-62c6c3.netlify.app !**
 
 This is the `docs` starter template. It contains all of the features that you need to build a Markdown-powered documentation site, including:
 
