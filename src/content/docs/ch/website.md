@@ -21,6 +21,10 @@ description: "网站大全"
 
 6. 二维码生成器
    https://tool.oschina.net/qr/
+
+7. 在线运行代码的网站
+- https://codepen.io/pen
+- https://codesandbox.io/
 ### 学习资料
 1. react技术揭秘
   https://react.iamkasong.com/#%E5%AF%BC%E5%AD%A6%E8%A7%86%E9%A2%91
