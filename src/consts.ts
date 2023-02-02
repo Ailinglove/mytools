@@ -42,7 +42,14 @@ export const SIDEBAR: Sidebar = {
 		],
 		'tools':[
 			{ text: '网站收录', link: 'ch/website' },
+			{ text: '日常记录', link: 'ch/skill' },
+
 			{ text: '博客、周刊收录', link: 'ch/bloggers' },
+		],
+
+		'前端书籍':[
+			{ text: 'javascript高级程序设计', link: 'books/javascript/book1-1' },
+			// { text: 'javascript高级程序设计', link: 'books/javascript/book1-1' },
 		],
 	}
 };
