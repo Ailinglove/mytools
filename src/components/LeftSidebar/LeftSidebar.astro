@@ -29,6 +29,12 @@ const sidebar = SIDEBAR[langCode];
 										<a style="font-size: 14px" href={url} aria-current={currentPageMatch === child.link ? 'page' : false}>
 											{child.text}
 										</a>
+										{
+										 child?.children?.map(item=>{
+										 console.log(item)
+										 return item
+										 })
+										}
 									</li>
 								);
 							})}

@@ -32,7 +32,7 @@ export const ALGOLIA = {
 
 export type Sidebar = Record<
 	(typeof KNOWN_LANGUAGE_CODES)[number],
-	Record<string, { text: string; link: string }[]>
+	Record<string, { text: string; link: string, children?:any }[]>
 >;
 export const SIDEBAR: Sidebar = {
 
@@ -42,14 +42,14 @@ export const SIDEBAR: Sidebar = {
 		],
 		'tools':[
 			{ text: '网站收录', link: 'ch/website' },
-			{ text: '日常记录', link: 'ch/skill' },
+			{ text: '日常记录', link: 'ch/skill'},
 
 			{ text: '博客、周刊收录', link: 'ch/bloggers' },
 		],
 
-		'前端书籍':[
-			{ text: 'javascript高级程序设计', link: 'books/javascript/book1-1' },
-			// { text: 'javascript高级程序设计', link: 'books/javascript/book1-1' },
+		'JavaScript高级程序设计':[
+			{ text: '第一章', link: 'books/javascript/book1-1' },
+			{ text: '第二章', link: 'books/javascript/book1-2' },
 		],
 	}
 };
