@@ -1,5 +1,5 @@
 ---
-title: "了解JavaScript"
+title: "什么是JavaScript"
 description: ""
 ---
 #### Javascript诞生的背景

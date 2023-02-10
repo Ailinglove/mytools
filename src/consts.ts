@@ -48,8 +48,8 @@ export const SIDEBAR: Sidebar = {
 		],
 
 		'JavaScript高级程序设计':[
-			{ text: '第一章', link: 'books/javascript/book1-1' },
-			{ text: '第二章', link: 'books/javascript/book1-2' },
+			{ text: '第1章 什么是JavaScript', link: 'books/javascript/book1-1' },
+			{ text: '第2章 HTML中的JavaScript', link: 'books/javascript/book1-2' },
 		],
 	}
 };

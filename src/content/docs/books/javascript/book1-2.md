@@ -1,5 +1,5 @@
 ---
-title: " HTML中使用JavaScript"
+title: "HTML中的JavaScript"
 description: ""
 ---
 #### 如何使用
@@ -27,5 +27,3 @@ html文档的解析渲染是自上而下的，因此我们习惯上要把script�
    立即下载，下载完立即执行，但不会阻塞html的其他工作。多个script标签执行顺序不保证
 - defer
    立即下载延迟执行，下载完成后等待html加载完成在执行。多个script标签执行顺序按引入顺序执行
-
-
