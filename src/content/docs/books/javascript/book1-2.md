@@ -2,28 +2,34 @@
 title: "HTML中的JavaScript"
 description: ""
 ---
-#### 如何使用
 
-JS出来之后，需要解决的问题就是如何在HTML中嵌入JS，经过一帆研究后，创造出了script标签。
+JS出来之后，需要解决的问题就是如何在HTML中嵌入JS还不影响页面在其他浏览器中的使用，经过一帆研究后，创造出了script标签。
 
-#### 使用方法
-具体使用方法有两种
-1. 通过src嵌入
-```javascript
-<script src="你的JS链接jshttp"></script>
+#### 2.1 script元素
+1. HTML 4.0.1为script定义了6个属性：
+  + async `异步脚本`  
+    立即下载，下载完立即执行，但不会阻塞html的其他工作。多个script标签执行顺序不保证
+  + defer `延迟脚本`  
+    立即下载延迟执行，下载完成后等待html<font color="red">完全被解析和显示后</font>再执行。多个script标签执行顺序按引入顺序执行
+  + type
+    language的替代属性
+  + src
+    文件路径、来源
+  + charset 基本不用
+  + language 已废弃
+
 ```
-这里有个特点，jshttp可以是同域名也可以是外部域名，没有跨域问题.因此有了一种解决跨域的方法JSON，原理就是通过script标签不跨域实现的
-
-2. 直接写在script中间
-
-```javascript
-<script>
-  你的js代码
-</script>
+注意的点⚠️
+- 在使用script嵌入js代码中，不要再代码的任何地方出现'</script>'字符串，会产生错误
+- 不能使用自闭合标签
+- 带有src的script标签中间不要在写代码，会被忽略
 ```
 
-html文档的解析渲染是自上而下的，因此我们习惯上要把script写在html文件body标签的最下边，这样不阻碍html文档的加载解析渲染。除了把script放在最下边，这里还提供了两种不会阻碍文档加载的方式，即通过script的async和defer属性实现
-- async 
-   立即下载，下载完立即执行，但不会阻塞html的其他工作。多个script标签执行顺序不保证
-- defer
-   立即下载延迟执行，下载完成后等待html加载完成在执行。多个script标签执行顺序按引入顺序执行
+2. 标签的位置
+按照传统做法，会把script标签放在head头部，这样做是为了将所有对外部引用的标签都放在head元素中，但是由于script会阻塞html的解析加载，这意味着html需要js都加载执行完才能继续加载渲染，无疑会有ingrain的显示延迟。因此，现代web应用会把script标签都统一放在body底部。
+
+#### 2.2 文档模型
+IE5.5时引入了文档模型，通过切换文档类型来实现的。最初有**混杂模型**和**标准模型**。这两种模式主要影响的是CSS的样式，但有时也会影响到JS的运行
+
+#### 2.3 noscript元素
+这个标签的出现是为了给不支持 JS 的浏览器提供了平稳的退化，包含在noscript标签下内容显示出来的条件：不支持脚本或者支持但是被禁用
