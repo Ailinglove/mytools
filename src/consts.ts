@@ -52,6 +52,7 @@ export const SIDEBAR: Sidebar = {
 			{ text: '第2章 HTML中的JavaScript', link: 'books/javascript/book1-2' },
 			{ text: '第3章 JS的基本概念', link: 'books/javascript/book1-3' },
 			{ text: '第4章 变量、作用域和内存问题', link: 'books/javascript/book1-4' },
+			{ text: '第5章 引用类型', link: 'books/javascript/book1-5' },
 
 		],
 	}
